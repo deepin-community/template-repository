@@ -21,10 +21,9 @@ test_build:
 
 tag_build:
   steps:
-    - branch_package:
-        source_project: deepin:Develop:community
-        source_package: %{SCM_REPOSITORY_NAME} 
-        target_project: deepin:Unstable:community
+    - trigger_services:
+        project: deepin:Unstable:community
+        package: %{SCM_REPOSITORY_NAME}
   filters:
     event: tag_push
 
