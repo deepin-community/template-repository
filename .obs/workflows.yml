@@ -33,4 +33,4 @@ commit_build:
         project: deepin:Develop:community
         package: %{SCM_REPOSITORY_NAME}
   filters:
-    event: push
+    event: pus
