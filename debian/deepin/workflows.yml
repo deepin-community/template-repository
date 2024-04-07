@@ -2,7 +2,7 @@ test_build:
   steps:
     - link_package:
         source_project: deepin:Develop:community
-        source_package: %{SCM_REPOSITORY_NAME} 
+        source_package: %{SCM_REPOSITORY_NAME}
         target_project: deepin:CI
 
     - configure_repositories:
